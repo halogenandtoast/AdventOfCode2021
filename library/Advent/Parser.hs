@@ -6,6 +6,9 @@ import Data.Char (digitToInt)
 import Text.Parsec as X
 import Text.Parsec.String as X
 
+parseInput :: Parser a -> String -> [a]
+parseInput p = fromRight (error "Invalid input") . doParse (manyTill (p <* try newline) eof)
+
 doParse :: Parser a -> String -> Either ParseError a
 doParse p i = parse p "input" i
 

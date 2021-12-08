@@ -10,6 +10,8 @@ default-extensions:
 - OverloadedStrings
 - DerivingStrategies
 - RankNTypes
+- ImportQualifiedPost
+- LambdaCase
 
 library:
   source-dirs: library

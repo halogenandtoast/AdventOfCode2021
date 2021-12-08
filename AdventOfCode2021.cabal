@@ -13,6 +13,7 @@ build-type:     Simple
 library
   exposed-modules:
       Advent.Day1
+      Advent.Day2
       Advent.Parser
       Advent.Prelude
   other-modules:
@@ -24,6 +25,8 @@ library
       OverloadedStrings
       DerivingStrategies
       RankNTypes
+      ImportQualifiedPost
+      LambdaCase
   build-depends:
       base >=4.7 && <5
     , parsec
@@ -41,6 +44,8 @@ executable AdventOfCode2021-exe
       OverloadedStrings
       DerivingStrategies
       RankNTypes
+      ImportQualifiedPost
+      LambdaCase
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       AdventOfCode2021
