@@ -1,0 +1,26 @@
+name:                AdventOfCode2021
+
+dependencies:
+- base >= 4.7 && < 5
+- relude
+- parsec
+
+default-extensions:
+- NoImplicitPrelude
+- OverloadedStrings
+- DerivingStrategies
+- RankNTypes
+
+library:
+  source-dirs: library
+
+executables:
+  AdventOfCode2021-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - AdventOfCode2021
