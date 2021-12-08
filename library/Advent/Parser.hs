@@ -3,7 +3,7 @@ module Advent.Parser (module X, module Advent.Parser) where
 import Advent.Prelude
 
 import Data.Char (digitToInt)
-import Text.Parsec as X
+import Text.Parsec as X hiding (count)
 import Text.Parsec.String as X
 
 parseInput :: Parser a -> String -> [a]
