@@ -12,6 +12,7 @@ default-extensions:
 - RankNTypes
 - ImportQualifiedPost
 - LambdaCase
+- GeneralizedNewtypeDeriving
 
 library:
   source-dirs: library
